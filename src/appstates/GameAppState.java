@@ -9,7 +9,7 @@ import com.simsilica.es.EntityId;
 import com.simsilica.es.EntitySet;
 import com.simsilica.es.Filters;
 import com.simsilica.es.ObservableEntityData;
-import components.Model;
+import components.Name;
 import components.Position;
 import java.util.Random;
 
@@ -31,11 +31,10 @@ public class GameAppState extends AbstractAppState {
         EntityId ship = ed.createEntity();
         this.ed.setComponents(ship,
                 new Position(new Vector3f(0f, -20f, 0f)),
-                new Model(Model.Cube));
+                new Name(Name.Cube));
         
-        shipSet = ed.getEntities(
-                Filters.fieldEquals(Model.class, "name", Model.Cube),
-                Model.class,
+        shipSet = ed.getEntities(Filters.fieldEquals(Name.class, "name", Name.Cube),
+                Name.class,
                 Position.class
         );
     }

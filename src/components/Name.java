@@ -9,14 +9,14 @@ import com.jme3.network.serializing.Serializable;
 import com.simsilica.es.EntityComponent;
 
 @Serializable
-public class Model implements EntityComponent {
+public class Name implements EntityComponent {
     private String name;
     public final static String Cube = "Cube";
     
-    public Model(){
+    public Name(){
     }
 
-    public Model(String name) {
+    public Name(String name) {
         this.name = name;
     }
 

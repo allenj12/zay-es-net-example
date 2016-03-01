@@ -19,7 +19,7 @@ import com.simsilica.es.EntityData;
 import com.simsilica.es.EntityId;
 import com.simsilica.es.EntitySet;
 import com.simsilica.es.client.EntityDataClientService;
-import components.Model;
+import components.Name;
 import components.Position;
 import java.util.HashMap;
 import java.util.Set;
@@ -47,7 +47,7 @@ public class VisualAppState extends AbstractAppState{
         this.app = (SimpleApplication)app;        
         this.edcs = stateManager.getState(ClientState.class).getClientService(); //might have to do this per update
         this.ed = this.edcs.getEntityData();
-        this.entities = ed.getEntities(Position.class, Model.class);
+        this.entities = ed.getEntities(Position.class, Name.class);
         
         System.out.println("");
         System.out.println(stateManager.getState(ClientState.class).getClient().isConnected());
@@ -118,7 +118,7 @@ public class VisualAppState extends AbstractAppState{
     }
 
     private Spatial createVisual(Entity e) {
-        Model model = e.get(Model.class);
+        Name model = e.get(Name.class);
         Vector3f test = e.get(Position.class).getLocation();
         System.out.println(test);
         System.out.println(model.getName());

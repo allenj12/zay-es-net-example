@@ -14,7 +14,7 @@ import com.jme3.network.Server;
 import com.jme3.network.serializing.Serializer;
 import com.simsilica.es.ObservableEntityData;
 import com.simsilica.es.server.EntityDataHostedService;
-import components.Model;
+import components.Name;
 import components.Position;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -49,7 +49,7 @@ public class ServerState extends AbstractAppState{
         Serializer.registerClasses(Input.class,
                 Update.class,
                 Position.class,
-                Model.class);
+                Name.class);
         
         server.getServices().addService(edhs);
         
