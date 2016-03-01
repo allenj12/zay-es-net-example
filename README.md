@@ -13,4 +13,5 @@ slf4j-api
 
 #How to run the example
 first run ServerMain.java
-then run ClientMain.java
+
+then run ClientMain.java (as many instances as you want)
