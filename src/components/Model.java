@@ -11,9 +11,7 @@ import com.simsilica.es.EntityComponent;
 @Serializable
 public class Model implements EntityComponent {
     private String name;
-    public final static String SpaceShip = "SpaceShip";
-    public final static String BasicInvader = "BasicInvader";
-    public final static String Bullet = "Bullet";
+    public final static String Cube = "Cube";
     
     public Model(){
     }

@@ -31,10 +31,10 @@ public class GameAppState extends AbstractAppState {
         EntityId ship = ed.createEntity();
         this.ed.setComponents(ship,
                 new Position(new Vector3f(0f, -20f, 0f)),
-                new Model(Model.SpaceShip));
+                new Model(Model.Cube));
         
         shipSet = ed.getEntities(
-                Filters.fieldEquals(Model.class, "name", Model.SpaceShip),
+                Filters.fieldEquals(Model.class, "name", Model.Cube),
                 Model.class,
                 Position.class
         );
@@ -47,7 +47,9 @@ public class GameAppState extends AbstractAppState {
     @Override
     public void update(float tpf) {
         Vector3f position = new Vector3f(randomRangedFloat(),randomRangedFloat(), 0f);
+        
         System.out.println(position);
+        
         shipSet.applyChanges();
         shipSet.stream().findFirst().ifPresent(e -> {
             System.out.println("Found");

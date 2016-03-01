@@ -9,7 +9,6 @@ import appstates.ClientState;
 import com.jme3.app.SimpleApplication;
 import com.jme3.renderer.RenderManager;
 import com.jme3.system.AppSettings;
-import appstates.EntityDataState;
 import appstates.VisualAppState;
 
 /**
@@ -23,18 +22,17 @@ public class ClientMain extends SimpleApplication{
         settings.setVSync(true);
         settings.setFrameRate(60);
         settings.setFullscreen(false);
-        settings.setSamples(16);
         settings.setResolution(640, 480);
         ClientMain app = new ClientMain();
         app.setShowSettings(false);
         app.setSettings(settings);
+        app.setPauseOnLostFocus(false);
         app.start();
     }
     
     public ClientMain(){
         super(new ClientState(),
                 new VisualAppState());
-                //new EntityDataState());
     }
 
     @Override

@@ -122,6 +122,6 @@ public class VisualAppState extends AbstractAppState{
         Vector3f test = e.get(Position.class).getLocation();
         System.out.println(test);
         System.out.println(model.getName());
-        return modelFactory.create(model.getName());
+        return modelFactory.create();
     }
 }

@@ -11,6 +11,8 @@ import com.jme3.network.serializing.Serializable;
  *
  * @author joe
  */
+
+//only used for console messages to know we are connected etc...
 @Serializable
 public class Update extends AbstractMessage {
     private String str;

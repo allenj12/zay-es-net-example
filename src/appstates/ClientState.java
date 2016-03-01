@@ -13,14 +13,10 @@ import com.jme3.network.Client;
 import com.jme3.network.ClientStateListener;
 import com.jme3.network.Message;
 import com.jme3.network.Network;
-import com.jme3.network.serializing.Serializer;
 import com.simsilica.es.client.EntityDataClientService;
-import components.Model;
-import components.Position;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import util.Input;
 import util.Update;
 import util.Globals;
 
@@ -43,16 +39,10 @@ public class ClientState extends AbstractAppState implements ClientStateListener
         this.edcs = new EntityDataClientService(Globals.CHANNEL);
         
         client.addClientStateListener(this);
-        
-        Serializer.registerClasses(Input.class,
-                Update.class,
-                Position.class,
-                Model.class);
-        
+
         client.getServices().addService(edcs);
  
         client.start();
-        edcs.start();
         
         synchronized(lock){
             if(!client.isConnected()){

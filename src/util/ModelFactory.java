@@ -15,7 +15,7 @@ public class ModelFactory {
         this.assetManager = assetManager;
     }
 
-    public Spatial create(String name) {
+    public Spatial create() {
         Node visual = new Node("Visual");
         Box box = new Box(1, 1, 1);
         Geometry geom = new Geometry("box", box);

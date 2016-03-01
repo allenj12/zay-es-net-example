@@ -12,6 +12,8 @@ import com.jme3.network.serializing.Serializable;
  *
  * @author joe
  */
+
+//right now has no use but here if you want to add to this example
 @Serializable
 public class Input extends AbstractMessage{
     

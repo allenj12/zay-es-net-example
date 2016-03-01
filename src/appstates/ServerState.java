@@ -55,9 +55,7 @@ public class ServerState extends AbstractAppState{
         
         server.addMessageListener(new ServerListener(), Input.class, Update.class);
         
-        //server.addChannel(Globals.CHANNEL);
         server.start();
-        edhs.start();
         
         System.out.println("Server Running");
     }
