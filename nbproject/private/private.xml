@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/joe/Dev/games/MMArena/src/appstates/EntityDataState.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/appstates/ClientState.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/server/ServerListener.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/components/Model.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/appstates/VisualAppState.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/components/Position.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/server/ServerMain.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/client/ClientMain.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/util/Globals.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/appstates/ServerState.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/appstates/GameAppState.java</file>
+            <file>file:/home/joe/Dev/games/MMArena/src/util/ModelFactory.java</file>
+        </group>
+    </open-files>
+</project-private>
